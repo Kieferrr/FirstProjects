@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/436/896/datas/original.png" alt="Pokémon Logo">
+    </header>
+
+    <div class="controls">
+        <input type="text" id="search-input" class="search-input" placeholder="Buscar por nombre, ID o tipo" autocomplete="off">
+        <select id="type-input" class="type-select">
+            <option value="all">Todos los tipos</option>
+            <option value="normal">Normal</option>
+            <option value="fire">Fuego</option>
+            <option value="water">Agua</option>
+            <option value="electric">Eléctrico</option>
+            <option value="grass">Planta</option>
+            <option value="ice">Hielo</option>
+            <option value="fighting">Lucha</option>
+            <option value="poison">Veneno</option>
+            <option value="ground">Tierra</option>
+            <option value="flying">Volador</option>
+            <option value="psychic">Psíquico</option>
+            <option value="bug">Bicho</option>
+            <option value="rock">Roca</option>
+            <option value="ghost">Fantasma</option>
+            <option value="dragon">Dragón</option>
+            <option value="dark">Oscuro</option>
+            <option value="steel">Acero</option>
+            <option value="fairy">Hada</option>
+        </select>
+        <select id="order-input" class="order-select">
+            <option value="ascendente">ID Ascendente</option>
+            <option value="descendente">ID Descendente</option>
+            <option value="az">Nombre A-Z</option>
+            <option value="za">Nombre Z-A</option>
+        </select>
+    </div>
+    
+
+    <div id="pokemon-list" class="pokemon-list"></div>
+    <div id="pokemon-details" class="pokemon-details"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
